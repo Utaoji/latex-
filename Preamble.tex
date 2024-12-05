@@ -1,0 +1,67 @@
+%参考文献
+\usepackage[super]{cite}
+\usepackage{url}
+\usepackage{subfiles}
+\renewcommand\citeform[1]{[#1]}
+
+% 数式
+\usepackage{amsthm,amsmath,amssymb,amsfonts}
+\usepackage{mathrsfs}
+\usepackage{bm}
+\usepackage{mathtools}
+
+\usepackage{siunitx}
+\usepackage{physics}
+\AtBeginDocument{\RenewCommandCopy\qty\SI}
+\ExplSyntaxOn
+\msg_redirect_name:nnn { siunitx } { physics-pkg } { none }
+\ExplSyntaxOff
+\DeclareSIUnit\angstrom{\text{\AA}}
+
+% 画像
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{subfigure}
+\makeatletter
+\newcommand{\figcaption}[1]{\def\@captype{figure}\caption{#1}}
+\newcommand{\tblcaption}[1]{\def\@captype{table}\caption{#1}}
+\makeatother
+\usepackage{askmaps}
+\usepackage{color}
+% 図形
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{comment}
+\usepackage[version=4]{mhchem}
+
+\renewcommand{\labelenumi}{(\arabic{enumi})}
+\renewcommand{\labelenumii}{(\alph{enumii})}
+\newcommand{\Frac}[2]{\dfrac{\,#1\,}{\,#2\,}}
+\newcommand{\mathone}{\mathrm{I}}
+\newcommand{\mathtwo}{\mathrm{I}\hspace{-1.2pt}\mathrm{I}}
+
+\newcommand{\Romannumeral}[1]{\uppercase\expandafter{\romannumeral#1}}
+
+\newcommand{\kB}{k_{\rm{B}}}
+
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{enumerate}
+\renewcommand{\figurename}{Fig. }
+\renewcommand{\tablename}{Table }
+\newcommand{\crefpairconjunction}{, }
+\newcommand{\crefrangeconjunction}{～}
+\newcommand{\crefmiddleconjunction}{, }
+\newcommand{\creflastconjunction}{, }
+
+\numberwithin{equation}{section}
+\setcounter{tocdepth}{3}
+\usepackage{textgreek} 
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{
+	colorlinks=true,
+	linktocpage=true,
+	citecolor=black,
+	linkcolor=black,
+	urlcolor=black,
+}
