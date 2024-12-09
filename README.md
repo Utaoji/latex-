@@ -1,4 +1,7 @@
 # latex設定
+書いてる途中の時はdir/subfile/subfilename.texを実行することでsubfilename.texのみpdf化
+
+dir/main.texを実行することで決定版をpdf化
 ## .latexmkrc
 ホームディレクトリ直下に
 ## settings.json
