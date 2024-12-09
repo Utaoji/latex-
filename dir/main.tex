@@ -1,5 +1,8 @@
-\documentclass[uplatex,dvipdfmx,titlepage]{jsarticle}
+\documentclass[uplatex,dvipdfmx,titlepage]{jsreport}
 \input{../Preamble.tex}
+\usepackage[top=15truemm,bottom=30truemm,left=25truemm,right=25truemm]{geometry}
+\usepackage{titlesec}
+\titleformat{\chapter}[hang]{\huge\bfseries}{第\thechapter 章}{1em}{}
 \graphicspath{{images/}}
 \begin{document}
 \begin{titlepage}
